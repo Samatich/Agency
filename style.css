@@ -1,3 +1,4 @@
+
 /* Portfolio */
 .portfolio img{
     width: 350px;
@@ -14,6 +15,10 @@
 }
 
 .portfolio h2{
+
+
+/* Section Services */
+.services h2{
     color: black;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -85,4 +90,236 @@
 .icon{
     color: white;
     margin: auto;
+}
+.services h4{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: var(--gray);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.icon-e-commerce, .icon-responsive-design, .icon-web-security{
+    height: 2.8em;
+    width: 3em;
+    border: 1px yellow solid;
+    border-radius: 50%;
+    background: var(--primary);
+    font-size: 3em;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services i{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.services p{
+    color: var(--gray);
+    text-align: center;
+}
+
+.services h3{
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.services p{
+    margin: 0 40px;
+    line-height: 1.5rem;
+}
+
+/* Global Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+ --blue: #007bff;
+ --indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #fed136;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #fed136;
+ --secondary: #6c757d;
+ --success: #28a745;
+ --info: #17a2b8;
+--warning: #fed136;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none; 
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    padding: 1em 0;
+}
+
+h2, h4{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+/* Header (Navbar) */
+
+.header{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background: transparent;
+    gap: 100px;
+    z-index: 1;
+    background: rgba(248, 249, 250,0);
+    
+   
+}
+
+.logo a{
+    color: var(--yellow);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+.navbar ul{
+    display: flex;
+    
+    
+}
+.navbar ul li{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 20px;
+    color: var(--light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+
+}
+
+.navbar ul li a{
+    color: var(--light);
+}
+.navbar ul li a:hover{
+    color: var(--yellow);
+    border-bottom: yellow;
+}
+
+
+/* Showcase */
+
+.showcase{
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.bg-image{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.showcase .welcome{
+    padding: 20px;
+    font-style: italic;
+    color: var(--light);
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+}
+.showcase .meet{
+    color: var(--light);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.showcase a{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    border: none;
+    padding: 25px 60px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: var(--light);
+    transition: transform 0.2s ease-in;
+}
+
+.showcase a:hover{
+    transform: translateY(-15px);
 }
