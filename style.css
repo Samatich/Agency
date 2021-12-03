@@ -1,4 +1,195 @@
 
+/* Footer */
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+.tw, .fb, .ln{
+    border-radius: 50%;
+    border: var(--gray-dark) solid 1px;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    margin: 10px;
+    padding: 7px 14px;
+    }
+
+.privacy{
+    margin-top: 15px;
+}
+.privacy a{
+    color: orange;
+}
+.privacy a:hover{
+cursor: pointer;
+}
+
+/* Animation */
+.welcome, .meet, .button{
+    animation: slideInFromLeft 1s ease-in;
+}
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .showcase .welcome, .meet{
+        text-align: center; 
+    }
+    .showcase .meet{
+        line-height: 1.2em;
+    }
+    .logo a{
+        padding-left: 20px;
+    }
+
+    .portfolio .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0 50px 0 50px;
+    }
+    .portfolio-photos{
+        display: block;
+        width: 250px;
+        margin: auto;
+    }
+    .team p{
+        display: block;
+        width: 700px;
+        margin: auto;
+    }
+
+    .partners{
+        width: 90%;
+        margin: auto;
+        margin-top: 150px;
+        
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 120px 20px 20px;
+    }
+
+    textarea{
+        border-radius: 7px;
+        height: 225px;
+        margin-top: 20px;
+        width: 370px;
+    }
+
+    .footer-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .privacy{
+        margin-bottom: 30px;
+    }
+}
+
+    @media screen and (max-width: 800px){
+        .showcase .welcome, .meet{
+            text-align: center;
+           
+        }
+        .showcase .welcome{
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .showcase .meet{
+            line-height: 1.2em;
+            font-size: 3.5rem; 
+        }
+        
+        .header{
+            background-color: #212529;
+            height: 70px;
+            margin-top: 0;
+        }
+        .header ul li{
+            display: none;
+        }
+        .header .logo {
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+        .header .logo a {
+            font-size: 1.2rem;
+        
+        }
+        .services .flex{
+            display: block;
+        }
+        .portfolio .grid{
+            display: block;
+        
+    }
+    .portfolio .boxes .img{
+        width: 250px;
+    }
+    .team p{
+        display: block;
+        width: 450px;
+        margin: auto;
+    }
+
+
+    .flex-partners{
+        display: block;
+        width: 60%;
+        margin: auto;
+        margin-right: 60px;
+    }
+    .flex-partners div{
+        width: 80%;
+        margin: auto
+    }
+    .contact-flex{
+        display: block;
+    }
+    input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 210px 20px 20px;
+        display: block;
+        margin: auto;
+    }
+
+    textarea{
+        border-radius: 7px;
+        height: 150px;
+        margin-top: 20px;
+        width: 470px;
+        margin-left: 20px;
+        display: block;
+        margin: auto;
+    }
+    .each-form{
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    .contact-us h4{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-us h2{
+        margin: 30px 0 0 0;
+        padding: 50px 0 20px 0;
+    }
+
+}
+
+
 /* Partners */
 .flex-partners{
     display: flex;
