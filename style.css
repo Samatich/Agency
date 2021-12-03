@@ -1,4 +1,87 @@
 
+/* Partners */
+.flex-partners{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-partners img{
+    width: 80%;
+}
+
+
+/* Contact Section */
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact-us h2{
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 120px;
+    text-align: center;
+}
+
+h4{
+    padding: 0 0 40px 0;
+    font-style: italic;
+    color: var(--gray);
+    text-align: center;
+}
+.contact-us{
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
+    background-color: #212529;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    border:none;
+    padding: 20px 250px 20px 20px;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    border-radius: 7px;
+    font-weight: bold;
+}
+.each-form{
+    margin: 20px;
+}
+
+textarea{
+    border-radius: 7px;
+    height: 225px;
+    margin-top: 20px;
+    width: 500px;
+}
+.form{
+    padding: 20px 0 0 20px;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    font-weight: bold;
+    border: none;
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    border: none;
+    padding: 25px 60px;
+    border-radius: 7px;
+    font-weight: bold;
+    display: block;
+    width: 300px;
+    margin:auto;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+}
+
+.btn:hover{
+
 /* Our Amazing Team */
 
 .portfolio-photos{
